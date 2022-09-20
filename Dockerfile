@@ -1,4 +1,4 @@
-FROM jekyll/jekyll:4.2.0
+FROM jekyll/jekyll:4.2.2
 WORKDIR /src/jekyll/
 COPY . .
 RUN gem install bundler:1.16.0
