@@ -85,7 +85,7 @@ hr.star-primary:after {
 header {
     text-align: center;
     color: #fff;
-    background: #{{ site.color.primary }};
+    background: #{{ site.color.secondary }};
 }
 
 header .container {
@@ -452,7 +452,7 @@ footer .footer-below {
 }
 
 .navbar-nav>.active>a {
-    background-color: #{{ site.color.secondary-dark }} !important;
+    background-color: #{{ site.color.secondary }} !important;
 }
 
 /* Fix modal mouse wheel issues */
@@ -508,4 +508,12 @@ header .intro-text .name {
     .collapsing {
         overflow: hidden!important;
     }
+}
+.consulting-topic {
+  font-weight: bold;
+  display: inline;
+  margin-right: 5px;
+}
+nav.navbar-default {
+  background-color: #{{ site.color.primary }};
 }
