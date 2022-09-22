@@ -23,6 +23,17 @@
     <link rel="stylesheet" href="{{ "css/font-awesome/css/font-awesome.min.css" }}" />
     <link href="//fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
     <link href="//fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+    {% if site.google_analytics_measurement_id%}
+      <!-- Google tag (gtag.js) -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id={{site.google_analytics_measurement_id}}"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', '{{site.google_analytics_measurement_id}}');
+      </script>
+    {% endif %}
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -97,9 +108,14 @@
           <div class="row">
             <div class="col-lg-12">
               {% assign is_future = 'now' | date: "%Y" | minus: "2021" %}
-              Copyright &copy; {{ site.name }}
+              &copy;
               {% if is_future > 0 %} {{published_year | date: '%Y - '}} {% endif %}
               {{ site.time | date: '%Y' }}
+              {{ site.name }}
+              <br>
+              <!-- You found Waldo! -->
+              <img class="waldo" src="img/waldo.png">
+              <!-- You found Waldo! -->
             </div>
           </div>
         </div>

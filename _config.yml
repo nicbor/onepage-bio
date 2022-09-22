@@ -8,6 +8,8 @@ baseurl:
 form_submit_url: https://formspree.io/f/xqkjpord
 # for formatting the copyright notice, what year this site was published
 published_year: 2022
+# if you use google analytics, put the measurement_id here (for help see https://support.google.com/analytics/answer/9539598)
+google_analytics_measurement_id: G-5D84WSW60V
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 # You should replace these with your social networks, of course. :)

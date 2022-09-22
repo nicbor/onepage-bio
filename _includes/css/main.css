@@ -514,6 +514,14 @@ header .intro-text .name {
   display: inline;
   margin-right: 5px;
 }
+
 nav.navbar-default {
   background-color: #{{ site.color.primary }};
+}
+
+.waldo {
+  height: 16px;
+  width: 16px;
+  display: inline;
+  vertical-align: inherit;
 }
